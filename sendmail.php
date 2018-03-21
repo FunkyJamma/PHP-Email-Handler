@@ -26,7 +26,7 @@ $subject = "Replace with subject"; /* Replace with subject */
 This bit sets the URLs of the supporting pages.
 If you change the names of any of the pages, you will need to change the values here.
 */
-$feedback_page = "index.html";
+$contact_page = "contact.html";
 $error_page = "error_message.html";
 $thankyou_page = "thank_you.html";
 
@@ -69,7 +69,7 @@ function isInjected($str) {
 
 // If the user tries to access this script directly, redirect them to the feedback form,
 if (!isset($_REQUEST['email'])) {
-header( "Location: $feedback_page" );
+header( "Location: $contact_page" );
 }
 
 // If the form fields are empty, redirect to the error page.
